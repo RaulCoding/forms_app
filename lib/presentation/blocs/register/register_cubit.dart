@@ -1,4 +1,3 @@
-import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:equatable/equatable.dart';
 
@@ -8,7 +7,7 @@ class RegisterCubit extends Cubit<RegisterFormState> {
   RegisterCubit() : super(const RegisterFormState());
   
   void onSubmit(){
-    print('Submit: $State');
+    print('Cubit Submit: $state');
   }
   
    void usernameChanged ( String value){
