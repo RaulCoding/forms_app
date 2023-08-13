@@ -1,27 +1,28 @@
-
-import 'package:forms_app/presentation/screens/screens.dart';
 import 'package:go_router/go_router.dart';
-
+import 'package:forms_app/presentation/screens/screens.dart';
 
 final appRouter = GoRouter(
   routes: [
-    
+
     GoRoute(
-      path:'/' ,
+      path: '/',
       builder: (context, state) => const HomeScreen(),
-      ),
-    
+    ),
+
     GoRoute(
-      path:'/cubits' ,
-      builder: (context, state) => const CubitCounterScren(),
-      ),
+      path: '/cubits',
+      builder: (context, state) => const CubitCounterScreen(),
+    ),
+
     GoRoute(
-      path:'/counter-bloc' ,
-      builder: (context, state) => const BlocCounterScren(),
-      ),
-      GoRoute(
-      path:'/new-user' ,
+      path: '/counter-bloc',
+      builder: (context, state) => const BlocCounterScreen(),
+    ),
+
+    GoRoute(
+      path: '/new-user',
       builder: (context, state) => const RegisterScreen(),
-      ),
+    ),
+
   ]
 );

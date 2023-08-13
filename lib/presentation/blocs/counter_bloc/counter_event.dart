@@ -4,10 +4,9 @@ abstract class CounterEvent {
   const CounterEvent();
 }
 
-class CounterIncreased extends CounterEvent{
+class CounterIncreased extends CounterEvent {
   final int value;
-  CounterIncreased(this.value);
+  const CounterIncreased(this.value);
 }
 
 class CounterReset extends CounterEvent {}
-
